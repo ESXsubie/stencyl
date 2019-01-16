@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-game-val-0 comment="false" x="26" y="40">
+                    <get-dxy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-dxy>
+                </set-game-val-0>
+                <if comment="false" x="26" y="73">
+                    <group eventID="1" id="-1">
+                        <set-dxy comment="false" x="37" y="98">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <get-val-5-1 comment="false" id="2" x="0" y="0"/>
+                        </set-dxy>
+                        <set-dxy comment="false" x="37" y="130">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                    </group>
+                    <get-val-5-2 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="26" y="169">
+                    <group eventID="1" id="-1">
+                        <set-dxy comment="false" x="37" y="189">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <get-val-5-1 comment="false" id="2" x="0" y="0"/>
+                        </set-dxy>
+                        <set-dxy comment="false" x="37" y="221">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                    </group>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-collide-actortogroup comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="3" id="-1">
+                        <set-val-5-1 comment="false" x="37" y="77">
+                            <int id="0" val="16"/>
+                        </set-val-5-1>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <randint comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                        </randint>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+                <else comment="false" x="26" y="109">
+                    <group eventID="3" id="-1">
+                        <set-val-5-1 comment="false" x="37" y="129">
+                            <int id="0" val="-16"/>
+                        </set-val-5-1>
+                    </group>
+                </else>
+                <set-val-5-2 comment="false" x="26" y="161">
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-5-2 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </set-val-5-2>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <actorgroup eid="1" id="1"/>
+        </event-collide-actortogroup>
+    </group>
+    <group eventID="2" id="1">
+        <get-val-5-1 comment="false" x="959" y="102"/>
+    </group>
+    <group eventID="2" id="2">
+        <randint comment="false" x="845" y="231">
+            <int id="0" val="-10"/>
+            <int id="1" val="10"/>
+        </randint>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-dxy comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="16"/>
+                </set-dxy>
+            </group>
+        </init>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>
